@@ -1,0 +1,10 @@
+ Difference(vector<int> a){
+        elements = a;
+        maximumDifference = 0;
+    }
+    void computeDifference(){
+        int n = elements.size();
+        sort(elements.begin(),elements.end());
+        maximumDifference = abs(elements[n-1]-elements[0]);
+    }
+        
